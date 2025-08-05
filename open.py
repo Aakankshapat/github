@@ -15,10 +15,9 @@ class Student():
      
     @staticmethod
     def hello():
-        print("Hello")    
+        print(" ")    
 
-s1=Student("Aakanksha",97,23) 
-print(s1.name,s1.marks)   
+s1=Student("Aakanksha",97,23)   
 s2=Student("Aditi",98,22)
 
 s1.welcome()
