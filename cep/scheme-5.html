@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarHub - Select scheme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: peachpuff;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            background-color:papayawhip;
+            padding: 180px 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .scheme {
+            margin-top: 30px;
+        }
+
+        .scheme {
+            background-color:#007bff;
+            color:white;
+            border: none;
+            padding: 10px 100px;
+            font-size: 0.8em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .scheme-button:hover {
+            background-color:blue;
+        }
+
+        .back-button {
+             margin-top: 20px;
+            background-color: #6c757d; 
+            color: white; 
+            padding: 10px 15px; 
+            border-radius: 5px;
+             text-decoration: none;
+              display: inline-block;
+             }
+    </style>
+    </head>
+    <body>
+        <h1>तुमची योजना निवडा</h1>
+        <div class="container">
+            
+            <div class="categories">
+                <button class="scheme" onclick="selectcategory('महाराष्ट्र प्री-मैट्रिक शिष्यवृत्ती (अनु.जातीसाठी, इयत्ता 5वी ते 10वी) - महाराष्ट्र शासन')">महाराष्ट्र प्री-मैट्रिक शिष्यवृत्ती (अनु.जातीसाठी, इयत्ता 5वी ते 10वी) - महाराष्ट्र शासन</button><br><br>
+                <button class="scheme" onclick="selectcategory('राजर्षी छत्रपती शाहू महाराज मेरिट शिष्यवृत्ती (अनु.जातीसाठी, इयत्ता 11-12) - महाराष्ट्र शासन')">राजर्षी छत्रपती शाहू महाराज मेरिट शिष्यवृत्ती (अनु.जातीसाठी, इयत्ता 11-12) - महाराष्ट्र शासन</button><br><br>
+                <button class="scheme" onclick="selectcategory('राजर्षी छत्रपती शाहू महाराज मेरिट शिष्यवृत्ती (VJNT आणि SBC विद्यार्थ्यांसाठी) - महाराष्ट्र शासन')">राजर्षी छत्रपती शाहू महाराज मेरिट शिष्यवृत्ती (VJNT आणि SBC विद्यार्थ्यांसाठी) - महाराष्ट्र शासन</button><br><br>
+                <button class="scheme" onclick="selectcategory('पूर्व-मैट्रिक अपंग विद्यार्थ्यांसाठी शिष्यवृत्ती (महाराष्ट्र शासन)')">पूर्व-मैट्रिक अपंग विद्यार्थ्यांसाठी शिष्यवृत्ती (महाराष्ट्र शासन)</button><br><br>
+                <button class="scheme" onclick="selectcategory('राष्ट्रीय शिष्यवृत्ती पोर्टल (NSP), भारत सरकार')">राष्ट्रीय शिष्यवृत्ती पोर्टल (NSP), भारत सरकार</button><br><br>
+            </div> 
+        </div>
+                        <p><a href="marathi.html" class="back-button">Back to category</a></p>
+                <script>
+            function selectcategory(category)
+            {
+                if(category==='महाराष्ट्र प्री-मैट्रिक शिष्यवृत्ती (अनु.जातीसाठी, इयत्ता 5वी ते 10वी) - महाराष्ट्र शासन')
+            {window.location.href="1-12(6).html"}
+            else if(category==='राजर्षी छत्रपती शाहू महाराज मेरिट शिष्यवृत्ती (अनु.जातीसाठी, इयत्ता 11-12) - महाराष्ट्र शासन')
+            {window.location.href="1-12(7).html"}
+            else if(category==='राजर्षी छत्रपती शाहू महाराज मेरिट शिष्यवृत्ती (VJNT आणि SBC विद्यार्थ्यांसाठी) - महाराष्ट्र शासन')
+            {window.location.href="1-12(8).html"}
+            else if(category==='पूर्व-मैट्रिक अपंग विद्यार्थ्यांसाठी शिष्यवृत्ती (महाराष्ट्र शासन)')
+            {window.location.href='1-12(9).html'}
+            else if(category==='राष्ट्रीय शिष्यवृत्ती पोर्टल (NSP), भारत सरकार')
+            {window.location.href='1-12(10).html'}
+            
+            }
+            </script>
+            </body>
+            </html>

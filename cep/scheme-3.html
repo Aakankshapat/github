@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarHub - Select scheme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: peachpuff;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            background-color:papayawhip;
+            padding: 180px 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .scheme {
+            margin-top: 30px;
+        }
+
+        .scheme {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 200px;
+            font-size: 0.6em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .scheme-button:hover {
+            background-color: #0056b3;
+        }
+
+        .back-button {
+             margin-top: 20px;
+            background-color: #6c757d; 
+            color: white; 
+            padding: 10px 15px; 
+            border-radius: 5px;
+             text-decoration: none;
+              display: inline-block;
+             }
+    </style>
+    </head>
+    <body>
+        <h1>select your scheme</h1>
+        <div class="container">
+            
+            <div class="categories">
+                <button class="scheme" onclick="selectcategory('EBC')">National Scholarship Portal (NSP), Government of India</button><br><br>
+                <button class="scheme" onclick="selectcategory('PDNB')">Post‑Matric Scholarship for Students with Disabilities (Maharashtra)</button><br><br>
+                <button class="scheme" onclick="selectcategory('asd')">Rajarshri Chhatrapati Shahu Maharaj Merit Scholarship (for SC/OBC/VJNT/SBC)</button><br><br>
+                 <button class="scheme" onclick="selectcategory('asb')">Dr. Punjabrao Deshmukh Maintenance Allowance Scholarship
+Government of Maharashtra</button><br><br>
+                 <button class="scheme" onclick="selectcategory('asm')">Maharashtra Post-Matric Scholarship 
+Government of Maharashtra</button><br><br>
+                 
+                <p><a href="english.html" class="back-button">Back to category</a></p>
+            </div> 
+        </div>
+                <script>
+            function selectcategory(category)
+            {
+                if(category==='EBC')
+            {window.location.href="1.html"}
+            else if(category==='PDNB')
+            {window.location.href="medien2.html"}
+            else if(category==='asd')
+            {window.location.href="medien3.html"}
+            else if(category==='asb')
+            {window.location.href="medien4.html"}
+            else if(category==='asm')
+            {window.location.href="medien5.html"}
+            }
+            </script>
+            </body>
+            </html>

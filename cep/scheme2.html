@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarHub - Select scheme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: peachpuff;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            background-color:papayawhip;
+            padding: 180px 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .scheme {
+            margin-top: 30px;
+        }
+
+        .scheme {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 200px;
+            font-size: 0.6em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .scheme-button:hover {
+            background-color: #0056b3;
+        }
+
+        .back-button {
+             margin-top: 20px;
+            background-color: #6c757d; 
+            color: white; 
+            padding: 10px 15px; 
+            border-radius: 5px;
+             text-decoration: none;
+              display: inline-block;
+             }
+    </style>
+    </head>
+    <body>
+        <h1>select your scheme</h1>
+        <div class="container">
+            
+            <div class="categories">
+                <button class="scheme" onclick="selectcategory('तांत्रिक शिक्षणात मुलींच्या प्रगतीसाठी सहाय्य योजना (AICTE Pragati)')">तांत्रिक शिक्षणात मुलींच्या प्रगतीसाठी सहाय्य योजना (AICTE Pragati)</button><br><br>
+                <button class="scheme" onclick="selectcategory('तांत्रिक शिष्यवृत्ती अर्ज प्रक्रिया (TESSDL Scholarship)')">तांत्रिक शिष्यवृत्ती अर्ज प्रक्रिया (TESSDL Scholarship)</button><br><br>
+                <button class="scheme" onclick="selectcategory('GATE शिष्यवृत्ती अर्ज प्रक्रिया')">GATE शिष्यवृत्ती अर्ज प्रक्रिया</button><br><br>
+                <button class="scheme" onclick="selectcategory('Central Sector Scholarship NSP अर्ज कसा करावा')">Central Sector Scholarship NSP अर्ज कसा करावा</button><br><br>
+                <button class="scheme" onclick="selectcategory('FFE शिष्यवृत्ती अर्ज प्रक्रिया')">FFE शिष्यवृत्ती अर्ज प्रक्रिया</button><br><br>
+                
+
+                <p><a href="marathi.html" class="back-button">श्रेणींवर परत जा</a></p>
+            </div> 
+        </div>
+                <script>
+            function selectcategory(category)
+            {
+                if(category==='तांत्रिक शिक्षणात मुलींच्या प्रगतीसाठी सहाय्य योजना (AICTE Pragati)')
+            {window.location.href="tech6.html"}
+            else if(category==='तांत्रिक शिष्यवृत्ती अर्ज प्रक्रिया (TESSDL Scholarship)')
+            {window.location.href="tech7.html"}
+            else if(category==='GATE शिष्यवृत्ती अर्ज प्रक्रिया')
+            {window.location.href="tech8.html"}
+             else if(category==='Central Sector Scholarship NSP अर्ज कसा करावा')
+            {window.location.href="tech9.html"}
+             else if(category==='FFE शिष्यवृत्ती अर्ज प्रक्रिया')
+            {window.location.href="tech10.html"}
+            
+            
+            }
+            </script>
+            </body>
+            </html>

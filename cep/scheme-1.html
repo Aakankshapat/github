@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarHub - Select scheme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: peachpuff;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            background-color:papayawhip;
+            padding: 180px 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .scheme {
+            margin-top: 30px;
+        }
+
+        .scheme {
+            background-color:#007bff;
+            color:white;
+            border: none;
+            padding: 10px 100px;
+            font-size: 0.8em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .scheme-button:hover {
+            background-color:blue;
+        }
+
+        .back-button {
+             margin-top: 20px;
+            background-color: #6c757d; 
+            color: white; 
+            padding: 10px 15px; 
+            border-radius: 5px;
+             text-decoration: none;
+              display: inline-block;
+             }
+    </style>
+    </head>
+    <body>
+        <h1>Select Your Scheme</h1>
+        <div class="container">
+            
+            <div class="categories">
+                <button class="scheme" onclick="selectcategory('Maharashtra Pre-Matric Scholarship (SC, Classes 5-10) Government of Maharashtra')">Maharashtra Pre-Matric Scholarship (SC, Classes 5-10) Government of Maharashtra</button><br><br>
+                <button class="scheme" onclick="selectcategory('Rajarshri Chhatrapati Shahu Maharaj Merit Scholarship (for SC students, 11-12)')">Rajarshri Chhatrapati Shahu Maharaj Merit Scholarship (for SC students, 11-12)</button><br><br>
+                <button class="scheme" onclick="selectcategory('Rajarshri Chhatrapati Shahu Maharaj Merit Scholarship for VJNT & SBC students')">Rajarshri Chhatrapati Shahu Maharaj Merit Scholarship for VJNT & SBC students</button><br><br>
+                <button class="scheme" onclick="selectcategory('Pre‑Matric Scholarship for Students with Disabilities (Maharashtra)')">Pre‑Matric Scholarship for Students with Disabilities (Maharashtra)</button><br><br>
+                <button class="scheme" onclick="selectcategory('National Scholarship Portal (NSP), Government of India')">National Scholarship Portal (NSP), Government of India</button><br><br>
+            </div> 
+        </div>
+                        <p><a href="english.html" class="back-button">Back to category</a></p>
+                <script>
+            function selectcategory(category)
+            {
+                if(category==='Maharashtra Pre-Matric Scholarship (SC, Classes 5-10) Government of Maharashtra')
+            {window.location.href="1-12(1).html"}
+            else if(category==='Rajarshri Chhatrapati Shahu Maharaj Merit Scholarship (for SC students, 11-12)')
+            {window.location.href="1-12(2).html"}
+            else if(category==='Rajarshri Chhatrapati Shahu Maharaj Merit Scholarship for VJNT & SBC students')
+            {window.location.href="1-12(3).html"}
+            else if(category==='Pre‑Matric Scholarship for Students with Disabilities (Maharashtra)')
+            {window.location.href='1-12(4).html'}
+            else if(category==='National Scholarship Portal (NSP), Government of India')
+            {window.location.href='1-12(5).html'}
+            
+            }
+            </script>
+            </body>
+            </html>
