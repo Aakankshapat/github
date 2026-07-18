@@ -6,4 +6,5 @@ while no > 0:
         rev=(rev*10)+r
         no=no//10
         
-print(rev)      
+print(rev) 
+       
